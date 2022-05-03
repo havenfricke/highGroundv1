@@ -3,7 +3,8 @@ const Schema = mongoose.Schema
 
 export const MerchCartItemSchema = new Schema(
   {
-    storeItemM: { type: Schema.Types.ObjectId, ref: 'StoreMerch', required: false },
+    merchCartItem: { type: Schema.Types.ObjectId, ref: 'MerchCartItem', required: false },
+    creatorId: { type: Schema.Types.ObjectId, ref: 'Profile', required: true }
   },
   { timestamps: true, toJSON: { virtuals: true } }
 )
