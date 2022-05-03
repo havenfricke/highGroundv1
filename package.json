@@ -1,0 +1,16 @@
+
+  {
+    "name": "highgroundv1",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:server",
+      "setup:app": "npm run setup:server && npm run setup:client",
+      "setup:client": "cd highGroundv1.client && npm i",
+      "setup:server": "cd highGroundv1 && npm i",
+      "start": "node highGroundv1/index.js"
+    },
+    "engines": {
+      "node": "^14.17.0"
+    }
+  }
+  
